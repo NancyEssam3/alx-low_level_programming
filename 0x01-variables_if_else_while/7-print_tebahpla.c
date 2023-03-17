@@ -11,7 +11,7 @@ int main(void)
 {
 	char lowcase;
 
-	for (lowcase = 'z'; lowcase >= 'a'; lowcase++)
+	for (lowcase = 'z'; lowcase >= 'a'; lowcase--)
 	{
 		putchar(lowcase);
 	}
