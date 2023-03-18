@@ -13,9 +13,9 @@ int main(void)
 	int i;
 
 	for (i = '0'; i <= '9'; i++)
-        {
-                putchar(i);
-        }
+	{
+		putchar(i);
+	}
 	for (lowcase = 'a'; lowcase <= 'f'; lowcase++)
 	{
 		putchar(lowcase);
