@@ -1,8 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - entry point
- * Retrun: 0
+ * Return: always 0
  */
 
 int main(void)
