@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - a function that concatenates two strings n bytes only from src.
+ * _strncat - a function that concatenates two strings n bytes only from src.
  * @dest: an input string
  * @src: an input string
- * @n: num of characters 
+ * @n: num of characters
  * Return: A pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
