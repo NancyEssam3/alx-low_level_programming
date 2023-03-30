@@ -7,7 +7,7 @@
  * @n: num of characters 
  * Return: A pointer to the resulting string
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	char *str = dest;
 
