@@ -9,12 +9,12 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *str = dest;
-
 	if (dest == NULL)
 		return (NULL);
 
-	while (*src != '\0' && n--)
+	char *str = dest;
+
+	while (*src && n--)
 	{
 		*dest = *src;
 		dest++;
