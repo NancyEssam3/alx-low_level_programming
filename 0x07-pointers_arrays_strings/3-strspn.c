@@ -11,15 +11,18 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int c = 0;
+	int nomatch = 2;
 	char *l = accept;
 
-	while (*s)
+	while (*s && nomatch != 0)
 	{
+		nomatch = 0;
 		while (*accept)
 		{
 			if (*accept == *s)
 			{
 				c++;
+				nomatch = 1;
 				break;
 			}
 			accept++;
