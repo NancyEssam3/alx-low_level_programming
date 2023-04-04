@@ -9,7 +9,7 @@
 
 char *_strchr(char *s, char c)
 {
-	char *p = ;
+	char *p = NULL;
 
 	while (*s)
 	{
@@ -18,7 +18,6 @@ char *_strchr(char *s, char c)
 			p = s;
 			break;
 		}
-		p++;
 		s++;
 	}
 
