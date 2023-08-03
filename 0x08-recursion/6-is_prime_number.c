@@ -7,7 +7,6 @@
  */
 int is_prime_number(int n)
 {
-	int div = 2;
 	int ans = 0;
 
 	if (n <= 1)
