@@ -16,7 +16,7 @@ int is_prime_number(int n)
 	else if ((1 / n - n) % n == 0)
 	{
 		return (0);
-	}	
+	}
 	else if (n / n == 1)
 	{
 		ans = is_prime_number(n - 1 + 1 / n);
