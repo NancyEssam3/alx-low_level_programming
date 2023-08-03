@@ -21,13 +21,13 @@ int _sqrt_recursion(int n)
 	{
 		int t = n / 2;
 
-		if ( (t * t) > n)
+		if ((t * t) > n)
 		{
 			ans =  _sqrt_recursion(t);
 		}
-		else if ( (t * t) < n)
+		else if ((t * t) < n)
 		{
-			ans = _sqrt_recursion( t + (n - t));
+			ans = _sqrt_recursion(t + (n - t));
 		}
 	}
 	return (ans);
