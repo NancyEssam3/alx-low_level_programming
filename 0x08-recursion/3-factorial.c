@@ -8,6 +8,7 @@
 int factorial(int n)
 {
 	int fact = 0;
+
 	if (n < 0)
 	{
 		return (-1);
@@ -18,7 +19,7 @@ int factorial(int n)
 	}
 	else
 	{
-		fact = n * factorial(n -1);
+		fact = n * factorial(n - 1);
 	}
 	return (fact);
 }
