@@ -23,7 +23,6 @@ int main(int argc, char *argv[])
 
 		while (index < argc)
 		{
-
 			if (!(isdigit(argv[argc][index])))
 			{
 				printf("Error\n");
