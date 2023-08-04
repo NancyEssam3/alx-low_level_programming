@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		arg1 = atoi(argv[0]);
-		arg2 = atoi(argv[1]);
+		arg1 = atoi(argv[1]);
+		arg2 = atoi(argv[2]);
 		printf("%d\n", arg1 * arg2);
 	}
 	else
