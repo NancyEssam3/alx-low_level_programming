@@ -13,37 +13,37 @@ char *str_concat(char *s1, char *s2)
 	char *arr = NULL, *temp1 = s1, *temp2 = s2;
 	int size = 1;
 
-	if (s1 != NULL)
+	while (*temp1)
 	{
-		while (*temp1)
-		{
-			temp1++;
-			size++;
-		}
+		temp1++;
+		size++;
 	}
-	if (s2 != NULL)
+	while (*temp2)
 	{
-		while (*temp2)
-		{
-			temp2++;
-			size++;
-		}
+		temp2++;
+		size++;
 	}
 	arr = malloc(size * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
 	temp1 = arr;
-	while (*s1)
+	if (s1 != NULL)
 	{
-		*arr = *s1;
-		s1++;
-		arr++;
+		while (*s1)
+		{
+			*arr = *s1;
+			s1++;
+			arr++;
+		}
 	}
-	while (*s2)
+	if (s2 != NULL)
 	{
-		*arr = *s2;
-		s2++;
-		arr++;
+		while (*s2)
+		{
+			*arr = *s2;
+			s2++;
+			arr++;
+		}
 	}
 	return (temp1);
 }
