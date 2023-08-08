@@ -14,16 +14,22 @@ char *str_concat(char *s1, char *s2)
 	char *temp1 = s1;
 	char *temp2 = s2;
 	int size = 1;
-
-	while (*temp1)
+	
+	if (s1 != NULL)
 	{
-		temp1++;
-		size++;
+		while (*temp1)
+		{
+			temp1++;
+			size++;
+		}
 	}
-	while (*temp2)
+	if (s2 != NULL)
 	{
-		temp2++;
-		size++;
+		while (*temp2)
+		{
+			temp2++;
+			size++;
+		}
 	}
 
 	arr = malloc(size * sizeof(char));
@@ -32,17 +38,23 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	temp1 = arr;
-	while (*s1)
+	if (s1 != NULL)
 	{
-		*arr = *s1;
-		s1++;
-		arr++;
+		while (*s1)
+		{
+			*arr = *s1;
+			s1++;
+			arr++;
+		}
 	}
-	while (*s2)
+	if (s2 != NULL)
 	{
-		*arr = *s2;
-		s2++;
-		arr++;
+		while (*s2)
+		{
+			*arr = *s2;
+			s2++;
+			arr++;
+		}
 	}
 	return (temp1);
 }
