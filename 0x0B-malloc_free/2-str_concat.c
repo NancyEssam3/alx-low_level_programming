@@ -12,7 +12,9 @@ char *str_concat(char *s1, char *s2)
 {
 	char *arr = NULL, *temp1 = s1, *temp2 = s2;
 	int size = 1;
-
+	
+	if (s1 == NULL & s2 == NULL)
+		return (NULL);
 	while (*temp1)
 	{
 		temp1++;
@@ -27,23 +29,17 @@ char *str_concat(char *s1, char *s2)
 	if (arr == NULL)
 		return (NULL);
 	temp1 = arr;
-	if (s1 != NULL)
+	while (*s1)
 	{
-		while (*s1)
-		{
-			*arr = *s1;
-			s1++;
-			arr++;
-		}
+		*arr = *s1;
+		s1++;
+		arr++;
 	}
-	if (s2 != NULL)
+	while (*s2)
 	{
-		while (*s2)
-		{
-			*arr = *s2;
-			s2++;
-			arr++;
-		}
+		*arr = *s2;
+		s2++;
+		arr++;
 	}
 	return (temp1);
 }
