@@ -13,8 +13,14 @@ char *str_concat(char *s1, char *s2)
 	char *arr = NULL, *temp1 = s1, *temp2 = s2;
 	int size = 1;
 
-	if ((s1 == NULL) & (s2 == NULL))
-		return (NULL);
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	while (*temp1)
 	{
 		temp1++;
