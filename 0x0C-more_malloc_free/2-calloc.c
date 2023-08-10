@@ -17,7 +17,7 @@ i
 	arr = malloc((nmemb + 1) * size);
 	if (arr == NULL)
 		return (NULL);
-	*temp = *arr
+	*temp = *arr;
 	while  (*temp)
 	{
 		*temp = 0;
