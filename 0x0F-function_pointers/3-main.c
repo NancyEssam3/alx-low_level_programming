@@ -1,6 +1,6 @@
 #include "3-calc.h"
 #include <string.h>
-#include <stdio.lib>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
