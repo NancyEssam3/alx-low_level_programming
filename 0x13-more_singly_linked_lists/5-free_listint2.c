@@ -3,11 +3,11 @@
 #include <stdio.h>
 
 /**
- * free_listint -  a function that frees a listint_t list.
+ * free_listint2 -  a function that frees a listint_t list.
  * @head: input list
  * Return: void
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t *head)
 {
 	listint_t *temp;
 
@@ -17,5 +17,5 @@ void free_listint(listint_t *head)
 		head = head->next;
 		free(temp);
 	}
-	free(head);
+	head = NULL;
 }
